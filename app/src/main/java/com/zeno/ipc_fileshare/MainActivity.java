@@ -73,6 +73,7 @@ public class MainActivity
     {
         try
         {
+            // 读取对象文件
             File externalStorageDirectory = Environment.getExternalStorageDirectory();
             ObjectInputStream inputStream = new ObjectInputStream(new BufferedInputStream(
                     new FileInputStream(new File(externalStorageDirectory, "cache"))));
